@@ -5,7 +5,7 @@
 ---
 
 ## 🔗 Repository Link
-[Click here to view the GitHub Repository](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/README.md)
+[Click here to view the GitHub Repository](https://github.com/harshitachabaria24/Containerization_and_Devops)
 
 ---
 
