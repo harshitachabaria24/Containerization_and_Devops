@@ -49,7 +49,7 @@ vagrant init ubuntu/jammy64
 vagrant up
 ```
 
-![Vagrant Up Process](../Screenshots/lab1/Picture4.png)
+![Vagrant Up Process](../screenshots/lab1/Picture4.png)
 
 **Observation:**  
 The system downloads the Ubuntu Jammy base box and configures the VirtualBox provider. Port forwarding (2222 → 22) is established.
@@ -62,7 +62,7 @@ The system downloads the Ubuntu Jammy base box and configures the VirtualBox pro
 vagrant ssh
 ```
 
-![VM SSH Connection](../Screenshots/lab1/Picture5.png)
+![VM SSH Connection](../screenshots/lab1/Picture5.png)
 
 **Observation:**  
 Successful login to Ubuntu 22.04.5 LTS environment.
@@ -75,12 +75,12 @@ Successful login to Ubuntu 22.04.5 LTS environment.
 sudo apt update
 sudo apt install -y nginx
 ```
-![Nginx Installation in VM](../Screenshots/lab1/Picture8.png)
+![Nginx Installation in VM](../screenshots/lab1/Picture8.png)
 
 **Observation:**  
 The apt package manager installs required dependencies. This process is slower compared to Docker because a full OS environment is involved.
 
-![Nginx Installation Complete](../Screenshots/lab1/Picture9.png)
+![Nginx Installation Complete](../screenshots/lab1/Picture9.png)
 
 **Observation:**  
 Installation completes successfully with triggers processed for man-db and ufw.
@@ -93,7 +93,7 @@ Installation completes successfully with triggers processed for man-db and ufw.
 curl localhost
 ```
 
-![VM Internal Verification](../Screenshots/lab1/Picture10.png)
+![VM Internal Verification](../screenshots/lab1/Picture10.png)
 
 **Observation:**  
 The command returns the full HTML source of the “Welcome to nginx!” page.
@@ -121,8 +121,8 @@ Docker pulls image layers and starts the container almost instantly.
 curl localhost:8080
 ```
 
-![Nginx Container Verification](../Screenshots/lab1/Screenshot%20(517).png)
-![Nginx Container Verification](../Screenshots/lab1/Screenshot%20(518).png)
+![Nginx Container Verification](../screenshots/lab1/Screenshot%20(517).png)
+![Nginx Container Verification](../screenshots/lab1/Screenshot%20(518).png)
 
 **Observation:**  
 The Nginx “Welcome” page is successfully displayed on port 8080.
@@ -152,7 +152,7 @@ The container started in less than 1 second.
 htop
 ```
 
-📸 *Screenshot: VM htop Process List*
+
 
 **Observation (VM):**  
 Multiple background services such as systemd, snapd, rsyslogd, polkitd, and sshd are running.
@@ -161,7 +161,7 @@ Multiple background services such as systemd, snapd, rsyslogd, polkitd, and sshd
 docker stats
 ```
 
-📸 *Screenshot: Docker Stats*
+
 
 **Observation (Container):**  
 The container runs only the Nginx process and minimal dependencies.
@@ -174,7 +174,7 @@ The container runs only the Nginx process and minimal dependencies.
 free -h
 ```
 
-📸 *Screenshot: VM Memory Usage*
+
 
 **Observation (VM):**  
 957 Mi total allocated, with ~196 Mi used by OS services.
