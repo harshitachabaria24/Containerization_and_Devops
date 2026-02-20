@@ -19,4 +19,4 @@
 
 - [Experiment 1](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab1.md)
 - [Experiment 2](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab2.md)
-- [Experiment 3](#)
+- [Experiment 3](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab3.md)
