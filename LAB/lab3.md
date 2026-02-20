@@ -199,7 +199,7 @@ docker history nginx-ubuntu
 docker history nginx-alpine
 ```
 
-![Official Image Pull](../screenshots/lab3/Screenshot%20(538).png)
+![Official Image Pull](../screenshots/lab3/Screenshot%20(537).png)
 
 ### Observations
 
@@ -235,3 +235,222 @@ nginx
 NGINX was successfully deployed using three different base images.  
 Image sizes, layers, and performance characteristics were compared.  
 Custom HTML content was served using volume mounting.
+
+---
+
+# Experiment 3: Deploying Web Applications with Docker
+
+In this experiment, we deploy a sample web application using Docker. This includes writing a custom Dockerfile, building a Docker image, and running the application inside a containerized environment.
+
+This experiment demonstrates the complete lifecycle of containerizing and deploying a web application.
+
+---
+
+## Objectives
+
+By completing this experiment, we will:
+
+1. Prepare a simple web application for containerization.
+2. Write a Dockerfile defining the application environment.
+3. Build a custom Docker image.
+4. Run the web app inside a Docker container.
+5. Verify that the application works correctly in the container.
+
+---
+
+# Step 1: Choose a Sample Application
+
+We selected a lightweight Python Flask web application.
+
+### Sample Flask Application (app.py)
+
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return 'Hello, Docker!'
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080)
+```
+![Official Image Pull](../screenshots/lab3/Screenshot%20(538).png)
+
+![Official Image Pull](../screenshots/lab3/Screenshot%20(539).png)
+---
+
+# Step 2: Create Application Files
+
+Inside the project directory, create:
+
+- `app.py`
+- `requirements.txt`
+
+### requirements.txt
+
+```
+flask
+```
+
+![Official Image Pull](../screenshots/lab3/Screenshot%20(540).png)
+
+![Official Image Pull](../screenshots/lab3/Screenshot%20(541).png)
+---
+
+# Step 3: Test the Application Locally
+
+Before containerizing, test locally:
+
+```bash
+python app.py
+```
+
+Visit:
+
+```
+http://localhost:8080
+```
+
+Expected Output:
+
+```
+Hello, Docker!
+```
+
+![Official Image Pull](../screenshots/lab3/Screenshot%20(548).png)
+
+Fix any errors before proceeding.
+
+---
+
+# Step 4: Writing the Dockerfile
+
+Create a file named `Dockerfile`.
+
+## Dockerfile Content
+
+```dockerfile
+# Base Image
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy application files
+COPY . /app
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Expose port
+EXPOSE 8080
+
+# Start application
+CMD ["python", "app.py"]
+```
+
+![Official Image Pull](../screenshots/lab3/Screenshot%20(542).png)
+![Official Image Pull](../screenshots/lab3/Screenshot%20(543).png)
+
+---
+
+## Explanation of Dockerfile Sections
+
+### 1. Base Image
+
+`FROM python:3.9-slim`
+
+This provides a lightweight Python runtime environment.
+
+---
+
+### 2. Copying Files
+
+`COPY . /app`
+
+Copies all application files into the container.
+
+---
+
+### 3. Installing Dependencies
+
+`RUN pip install --no-cache-dir -r requirements.txt`
+
+Installs Flask and other dependencies.
+
+---
+
+### 4. Entrypoint / Command
+
+`CMD ["python", "app.py"]`
+
+Defines the default command to run the application.
+
+---
+
+# Step 5: Build the Docker Image
+
+Run:
+
+```bash
+docker build -t flask-docker-app .
+```
+
+![Official Image Pull](../screenshots/lab3/Screenshot%20(544).png)
+![Official Image Pull](../screenshots/lab3/Screenshot%20(545).png)
+
+---
+
+# Step 6: Run the Docker Container
+
+```bash
+docker run -d -p 8080:8080 --name flask-container flask-docker-app
+```
+
+![Official Image Pull](../screenshots/lab3/Screenshot%20(546).png)
+---
+
+# Step 7: Verify the Application
+
+Open in browser:
+
+```
+http://localhost:8080
+```
+
+Expected Output:
+
+```
+Hello, Docker!
+```
+![Official Image Pull](../screenshots/lab3/Screenshot%20(547).png)
+
+---
+
+# Troubleshooting (If Issues Occur)
+
+If nothing loads:
+
+- Check container status:
+
+```bash
+docker ps
+```
+
+- Check container logs:
+
+```bash
+docker logs flask-container
+```
+
+
+
+---
+
+# Result
+
+The web application was successfully containerized using Docker.  
+A custom image was built, the container was launched, and the application was accessed via a web browser.
+
+This experiment demonstrates the complete workflow of deploying a web application in a containerized environment.
