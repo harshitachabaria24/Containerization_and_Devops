@@ -115,7 +115,7 @@ docker run -d --env-file .env --name app2 nginx
 ```
 
 📸 Screenshot:
-![Env File](screenshots/Screenshot 2026-04-24 114617.png)
+![Env File](screenshots/lab5/Screenshot 2026-04-24 114617.png)
 
 ---
 
