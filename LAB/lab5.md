@@ -62,7 +62,7 @@ docker run -d -v mydata:/app/data --name web2 nginx
 ```
 
 📸 Screenshot:
-![Named Volume](screenshots/lab5/Screenshot%202026-04-24114339.png)
+![Named Volume](../screenshots/lab5/2026-04-24114339.png)
 
 ---
 
