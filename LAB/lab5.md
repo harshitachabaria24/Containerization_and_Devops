@@ -38,7 +38,7 @@ docker exec test-container cat /data/message.txt
 👉 Data is lost after restart.
 
 📸 Screenshot:
-![Persistence](../screenshots/lab5/.png)
+![Persistence](../screenshots/lab5/picture2.png)
 ---
 
 ## 🧪 Lab 2: Volume Types
@@ -50,7 +50,7 @@ docker run -d -v /app/data --name web1 nginx
 ```
 
 📸 Screenshot:
-![Anonymous Volume](../screenshots/lab5/2026-04-24114256.png)
+![Anonymous Volume](../screenshots/lab5/picture2.png)
 
 ---
 
@@ -62,7 +62,7 @@ docker run -d -v mydata:/app/data --name web2 nginx
 ```
 
 📸 Screenshot:
-![Named Volume](../screenshots/lab5/2026-04-24114339.png)
+![Named Volume](../screenshots/lab5/picture3.png)
 
 ---
 
@@ -73,7 +73,7 @@ docker run -d -v /mnt/c/Users/HARSHITA/myapp-data:/app/data --name web3 nginx
 ```
 
 📸 Screenshot:
-![Bind Mount](screenshots/lab5/Screenshot2026-04-24114546.png)
+![Bind Mount](../screenshots/lab5/pic4.png)
 
 ---
 
@@ -89,7 +89,7 @@ docker cp local-file.txt web3:/app/data/
 ```
 
 📸 Screenshot:
-![Volume Commands](screenshots/lab5/Screenshot2026-04-24114617.png)
+![Volume Commands](../screenshots/lab5/picture5.png)
 
 ---
 
@@ -114,7 +114,7 @@ docker run -d --env-file .env --name app2 nginx
 ```
 
 📸 Screenshot:
-![Env File](screenshots/lab5/Screenshot2026-04-24114617.png)
+![Env File](../screenshots/lab5/picture5.png)
 
 ---
 
@@ -129,7 +129,7 @@ docker run -d \
 ```
 
 📸 Screenshot:
-![Flask Env](screenshots/Screenshot2026-04-24114708.png)
+![Flask Env](../screenshots/lab5/Screenshot%202026-04-25%20114708.png)
 
 ---
 
@@ -142,7 +142,7 @@ docker stats
 ```
 
 📸 Screenshot:
-![Stats](screenshots/Screenshot2026-04-24114736.png)
+![Stats](../screenshots/lab5/Screenshot%202026-04-25%20114736.png)
 
 ---
 
@@ -167,7 +167,7 @@ docker inspect flask-app
 ```
 
 📸 Screenshot:
-![Inspect](screenshots/Screenshot2026-04-24114804.png)
+![Inspect](../screenshots/lab5/Screenshot%202026-04-25%20114804.png)
 
 ---
 
@@ -178,8 +178,8 @@ docker events
 ```
 
 📸 Screenshot:
-![Events](screenshots/Screenshot2026-04-24114804.png)
-![Events](screenshots/Screenshot2026-04-24114820.png)
+![Events](../screenshots/lab5/Screenshot%202026-04-25%20114804.png)
+![Events](../screenshots/lab5/Screenshot%202026-04-25%20114820.png)
 
 
 ---
@@ -193,7 +193,7 @@ docker network ls
 ```
 
 📸 Screenshot:
-![Network List](screenshots/Screenshot 2026-04-24 114857.png)
+![Network List](../screenshots/lab5/Screenshot%202026-04-25%20114857.png)
 
 ---
 
@@ -206,7 +206,7 @@ docker run -d --name web2 --network my-network nginx
 ```
 
 📸 Screenshot:
-![Bridge](screenshots/Screenshot 2026-04-24 114906.png)
+![Bridge](../screenshots/lab5/Screenshot%202026-04-25%20114906.png)
 
 ---
 
@@ -219,7 +219,7 @@ docker network disconnect my-network web1
 ```
 
 📸 Screenshot:
-![Network Commands](screenshots/Screenshot 2026-04-24 114916.png)
+![Network Commands](../screenshots/lab5/Screenshot%202026-04-25%20114906.png)
 
 ---
 
@@ -259,9 +259,9 @@ docker run -d \
 ```
 
 📸 Screenshot:
-![Final Setup](screenshots/Screenshot 2026-04-24 115107.png)
-![Final Setup](screenshots/Screenshot 2026-04-24 115129.png)
-![Final Setup](screenshots/Screenshot 2026-04-24 115152.png)
+![Final Setup](../screenshots/lab5/Screenshot%202026-04-25%20115107.png)
+![Final Setup](../screenshots/lab5/Screenshot%202026-04-25%20115129.png)
+![Final Setup](../screenshots/lab5/Screenshot%202026-04-25%20115152.png)
 
 ---
 
