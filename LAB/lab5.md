@@ -38,8 +38,7 @@ docker exec test-container cat /data/message.txt
 👉 Data is lost after restart.
 
 📸 Screenshot:
-![Persistence](screenshots/Screenshot 2026-04-24 114256.png)
-
+![Persistence](screenshots/lab5/Screenshot%202026-04-25%20114256.png)
 ---
 
 ## 🧪 Lab 2: Volume Types
@@ -51,7 +50,7 @@ docker run -d -v /app/data --name web1 nginx
 ```
 
 📸 Screenshot:
-![Anonymous Volume](screenshots/Screenshot 2026-04-24 114256.png)
+![Anonymous Volume](screenshots/lab5/Screenshot%202026-04-24114256.png)
 
 ---
 
@@ -63,7 +62,7 @@ docker run -d -v mydata:/app/data --name web2 nginx
 ```
 
 📸 Screenshot:
-![Named Volume](screenshots/Screenshot 2026-04-24 114339.png)
+![Named Volume](screenshots/lab5/Screenshot%202026-04-24114339.png)
 
 ---
 
@@ -74,7 +73,7 @@ docker run -d -v /mnt/c/Users/HARSHITA/myapp-data:/app/data --name web3 nginx
 ```
 
 📸 Screenshot:
-![Bind Mount](screenshots/Screenshot 2026-04-24 114546.png)
+![Bind Mount](screenshots/lab5/Screenshot2026-04-24114546.png)
 
 ---
 
@@ -90,7 +89,7 @@ docker cp local-file.txt web3:/app/data/
 ```
 
 📸 Screenshot:
-![Volume Commands](screenshots/Screenshot 2026-04-24 114617.png)
+![Volume Commands](screenshots/lab5/Screenshot2026-04-24114617.png)
 
 ---
 
@@ -115,7 +114,7 @@ docker run -d --env-file .env --name app2 nginx
 ```
 
 📸 Screenshot:
-![Env File](screenshots/lab5/Screenshot 2026-04-24 114617.png)
+![Env File](screenshots/lab5/Screenshot2026-04-24114617.png)
 
 ---
 
@@ -130,7 +129,7 @@ docker run -d \
 ```
 
 📸 Screenshot:
-![Flask Env](screenshots/Screenshot 2026-04-24 114708.png)
+![Flask Env](screenshots/Screenshot2026-04-24114708.png)
 
 ---
 
@@ -143,7 +142,7 @@ docker stats
 ```
 
 📸 Screenshot:
-![Stats](screenshots/Screenshot 2026-04-24 114736.png)
+![Stats](screenshots/Screenshot2026-04-24114736.png)
 
 ---
 
@@ -168,7 +167,7 @@ docker inspect flask-app
 ```
 
 📸 Screenshot:
-![Inspect](screenshots/Screenshot 2026-04-24 114804.png)
+![Inspect](screenshots/Screenshot2026-04-24114804.png)
 
 ---
 
@@ -179,8 +178,8 @@ docker events
 ```
 
 📸 Screenshot:
-![Events](screenshots/Screenshot 2026-04-24 114804.png)
-![Events](screenshots/Screenshot 2026-04-24 114820.png)
+![Events](screenshots/Screenshot2026-04-24114804.png)
+![Events](screenshots/Screenshot2026-04-24114820.png)
 
 
 ---
