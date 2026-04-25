@@ -38,7 +38,7 @@ docker exec test-container cat /data/message.txt
 👉 Data is lost after restart.
 
 📸 Screenshot:
-![Persistence](screenshots/lab5/Screenshot%202026-04-25%20114256.png)
+![Persistence](../screenshots/lab5/.png)
 ---
 
 ## 🧪 Lab 2: Volume Types
@@ -50,7 +50,7 @@ docker run -d -v /app/data --name web1 nginx
 ```
 
 📸 Screenshot:
-![Anonymous Volume](screenshots/lab5/Screenshot%202026-04-24114256.png)
+![Anonymous Volume](../screenshots/lab5/2026-04-24114256.png)
 
 ---
 
