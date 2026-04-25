@@ -5,7 +5,7 @@
 ---
 
 ## 🔗 Repository Link
-[Click here to view the GitHub Repository](https://harshitachabaria24.github.io/Containerization_and_Devops/)
+[Click here to view the GitHub Repository](https://github.com/harshitachabaria24/Containerization_and_Devops)
 
 ---
 
