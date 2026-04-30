@@ -29,11 +29,11 @@ Each experiment includes:
 
 | Experiment No. | Title                                      |
 | -------------- | ------------------------------------------ |
-| [Lab 1](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab1.md)
-| [Lab 2](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab2.md)
-| [Lab 3](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab3.md)          
-| [Lab 4](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab4.md)         |             
-| [Lab 5](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab5.md)          |                             
+| [Lab 1](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab1.md)          | Virtual Machines vs Containers (Nginx Setup using VirtualBox/Vagrant & Docker)
+| [Lab 2](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab2.md)          | Docker Basics: Images, Containers & Lifecycle Management
+| [Lab 3](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab3.md)          | NGINX Deployment using Docker (Ubuntu vs Alpine vs Official Image)
+| [Lab 4](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab4.md)          | Docker Essentials           
+| [Lab 5](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab5.md)          | Docker Advanced Concepts: Volumes, Environment Variables, Monitoring & Networks                           
 | [Lab 6](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab6.md)          | Docker Run vs Docker Compose               |
 | [Lab 7](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab7.md)          | CI/CD using Jenkins, GitHub & Docker Hub   |
 | [Lab 9](https://github.com/harshitachabaria24/Containerization_and_Devops/blob/main/LAB/lab9.md)          | Configuration Management using Ansible     |
